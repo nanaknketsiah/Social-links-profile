@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --primary:hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --light-grey:hsl(0, 0%, 20%);
+    --dark-grey:hsl(0, 0%, 12%);
+    --off-black:hsl(0, 0%, 8%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+html,body,h1,h2,h3,h4,h5,h6,p,q{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    font-size: 14px;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+  }
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--off-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    background-color: var(--dark-grey);
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 15px;
+    gap: 20px;
+}
+@media (max-width: 600px) {
+    .profile{
+        display: flex;
+        background-color: var(--dark-grey);
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 15px;
+        gap: 20px;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .profile{
+        display: flex;
+        background-color: var(--dark-grey);
+        flex-direction: column;
+        padding: 5px;
+        border-radius: 15px;
+        gap: 20px;
+        
+    }
+  }
+.profile__details__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile__picture{
+    border-radius: 50%;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile__name{
+    text-align: center;
+    color: var(--white);
+}
+.profile__location{
+    text-align: center;
+    color: var(--primary);
+}
+
+q{
+    text-align: center;
+    color: var(--white);
+}
+
+.profile__links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.profile__links--style{
+    background-color: var(--light-grey);
+    color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+.profile__links--style:hover{
+    background-color: var(--primary);
+    color: var(--off-black);
+    cursor: pointer;
+}
+
+
+.profile__links--style:focus{
+    background-color: var(--primary);
+    color: var(--off-black);
+}
+
